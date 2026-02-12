@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hotel Entre Rios - Salamanca, Chile. Un lugar de descanso en medio de la naturaleza. Reservas: +56 9 9128 7644">
+  <meta name="keywords" content="hotel salamanca chile, hotel entre rios, alojamiento salamanca, hospedaje norte chico chile">
+  <meta property="og:title" content="Hotel Entre Rios - Salamanca, Chile">
+  <meta property="og:description" content="Descansa en un entorno natural único en Salamanca. Confort, tranquilidad y atención personalizada.">
+  <meta property="og:image" content="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-001.JPG">
+  <meta property="og:type" content="website">
+  <title>Hotel Entre Rios | Salamanca, Chile</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <img src="https://www.hotelentrerios.cl/assets/imgs/logohotel.png"
+             alt="Logo Hotel Entre Rios"
+             onerror="this.style.display='none'">
+        <span class="navbar-brand-text">Hotel Entre Rios</span>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarMain"
+              aria-controls="navbarMain" aria-expanded="false"
+              aria-label="Abrir menú">
+        <i class="bi bi-list fs-4 text-white"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habitaciones">Habitaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn-primary-custom nav-link" href="#contacto" style="border-radius:4px; padding: 0.55rem 1.3rem !important;">
+              Reservar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Salamanca, Chile</p>
+        <h1 class="hero-title">
+          Un refugio entre<br>
+          <span>ríos y montañas</span>
+        </h1>
+        <p class="hero-desc">
+          Bienvenido al Hotel Entre Rios, donde la tranquilidad de la naturaleza
+          se combina con el confort que mereces. Ubicado en el corazón de Salamanca.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn-primary-custom">
+            <i class="bi bi-calendar-check"></i>
+            Reservar ahora
+          </a>
+          <a href="#nosotros" class="btn-outline-custom">
+            <i class="bi bi-play-circle"></i>
+            Conocer más
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Desplazar</span>
+      <i class="bi bi-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DATOS RÁPIDOS (strip)
+       ============================================================ -->
+  <div class="bg-white py-4 border-bottom">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3 fade-in-up">
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-geo-alt-fill fs-5 text-accent" style="color: var(--color-accent);"></i>
+            <span style="font-size:0.88rem; font-weight:600; color: var(--color-text);">Julio Echeverría #701, Salamanca</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-in-up delay-1">
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-telephone-fill fs-5" style="color: var(--color-accent);"></i>
+            <a href="tel:+56991287644" style="font-size:0.88rem; font-weight:600; color: var(--color-text);">+56 9 9128 7644</a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-in-up delay-2">
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-envelope-fill fs-5" style="color: var(--color-accent);"></i>
+            <a href="mailto:reservas@hotelentrerios.cl" style="font-size:0.88rem; font-weight:600; color: var(--color-text);">reservas@hotelentrerios.cl</a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fade-in-up delay-3">
+          <div class="d-flex align-items-center justify-content-center gap-2">
+            <i class="bi bi-clock-fill fs-5" style="color: var(--color-accent);"></i>
+            <span style="font-size:0.88rem; font-weight:600; color: var(--color-text);">Check-in: 14:00 | Check-out: 11:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NOSOTROS
+       ============================================================ -->
+  <section id="nosotros" class="section-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Imagen -->
+        <div class="col-lg-5 fade-in-up">
+          <div class="about-image-wrap">
+            <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-033.JPG"
+                 alt="Exterior Hotel Entre Rios"
+                 loading="lazy">
+            <div class="about-badge">
+              <span class="badge-num">+10</span>
+              <span class="badge-label">años de hospitalidad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="col-lg-7 ps-lg-5">
+          <p class="section-subtitle fade-in-up">Nuestro Hotel</p>
+          <h2 class="section-title fade-in-up delay-1">Confort y naturaleza<br>en perfecta armonía</h2>
+          <p class="section-desc fade-in-up delay-2">
+            Hotel Entre Rios es un espacio pensado para quienes buscan descanso genuino.
+            Rodeado de la tranquilidad característica de Salamanca y su entorno natural,
+            ofrecemos una estadía acogedora con atención personalizada y todas las comodidades
+            para que tu visita sea memorable.
+          </p>
+
+          <div class="about-features fade-in-up delay-3">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="bi bi-wifi"></i></div>
+              <div class="about-feature-text">
+                <strong>WiFi en todo el hotel</strong>
+                <span>Conectividad sin interrupciones</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="bi bi-p-square-fill"></i></div>
+              <div class="about-feature-text">
+                <strong>Estacionamiento</strong>
+                <span>Espacio seguro para tu vehículo</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="bi bi-cup-hot"></i></div>
+              <div class="about-feature-text">
+                <strong>Desayuno incluido</strong>
+                <span>Comenzar el día con energía</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="bi bi-shield-check"></i></div>
+              <div class="about-feature-text">
+                <strong>Seguridad 24/7</strong>
+                <span>Tu tranquilidad es nuestra prioridad</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contacto" class="btn-accent mt-4 d-inline-flex fade-in-up delay-4">
+            <i class="bi bi-calendar-heart"></i>
+            Consultar disponibilidad
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HABITACIONES
+       ============================================================ -->
+  <section id="habitaciones">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 col-md-8">
+          <p class="section-subtitle fade-in-up">Alojamiento</p>
+          <h2 class="section-title fade-in-up delay-1">Habitaciones</h2>
+          <p class="section-desc fade-in-up delay-2">
+            Espacios pensados para tu descanso, con equipamiento completo
+            y vistas que invitan a relajarse.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Habitación Simple -->
+        <div class="col-md-6 col-lg-4 fade-in-up">
+          <div class="room-card">
+            <div class="room-card-img-wrap">
+              <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-015.JPG"
+                   alt="Habitación Simple" loading="lazy">
+              <span class="room-card-badge">Simple</span>
+            </div>
+            <div class="room-card-body">
+              <h3 class="room-card-title">Habitación Simple</h3>
+              <p class="room-card-desc">
+                Ideal para viajero individual. Cómoda, luminosa y equipada con todo lo esencial
+                para una estadía tranquila.
+              </p>
+              <div class="room-amenities">
+                <span class="amenity-pill"><i class="bi bi-wifi"></i> WiFi</span>
+                <span class="amenity-pill"><i class="bi bi-tv"></i> TV Cable</span>
+                <span class="amenity-pill"><i class="bi bi-snow"></i> A/C</span>
+                <span class="amenity-pill"><i class="bi bi-cup-hot"></i> Desayuno</span>
+              </div>
+              <a href="#contacto" class="btn-accent w-100 justify-content-center">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Habitación Doble -->
+        <div class="col-md-6 col-lg-4 fade-in-up delay-1">
+          <div class="room-card">
+            <div class="room-card-img-wrap">
+              <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-016.JPG"
+                   alt="Habitación Doble" loading="lazy">
+              <span class="room-card-badge">Doble</span>
+            </div>
+            <div class="room-card-body">
+              <h3 class="room-card-title">Habitación Doble</h3>
+              <p class="room-card-desc">
+                Perfecta para parejas o dos viajeros. Amplitud y confort en un ambiente
+                acogedor con todas las comodidades.
+              </p>
+              <div class="room-amenities">
+                <span class="amenity-pill"><i class="bi bi-wifi"></i> WiFi</span>
+                <span class="amenity-pill"><i class="bi bi-tv"></i> TV Cable</span>
+                <span class="amenity-pill"><i class="bi bi-snow"></i> A/C</span>
+                <span class="amenity-pill"><i class="bi bi-cup-hot"></i> Desayuno</span>
+              </div>
+              <a href="#contacto" class="btn-accent w-100 justify-content-center">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Habitación Triple / Familiar -->
+        <div class="col-md-6 col-lg-4 fade-in-up delay-2">
+          <div class="room-card">
+            <div class="room-card-img-wrap">
+              <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-020.JPG"
+                   alt="Habitación Familiar" loading="lazy">
+              <span class="room-card-badge">Familiar</span>
+            </div>
+            <div class="room-card-body">
+              <h3 class="room-card-title">Habitación Familiar</h3>
+              <p class="room-card-desc">
+                Diseñada para grupos familiares o grupos pequeños. Más espacio,
+                más comodidad, perfecta para una estadía familiar memorable.
+              </p>
+              <div class="room-amenities">
+                <span class="amenity-pill"><i class="bi bi-wifi"></i> WiFi</span>
+                <span class="amenity-pill"><i class="bi bi-tv"></i> TV Cable</span>
+                <span class="amenity-pill"><i class="bi bi-snow"></i> A/C</span>
+                <span class="amenity-pill"><i class="bi bi-cup-hot"></i> Desayuno</span>
+                <span class="amenity-pill"><i class="bi bi-p-square-fill"></i> Estacionamiento</span>
+              </div>
+              <a href="#contacto" class="btn-accent w-100 justify-content-center">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-center mt-4" style="font-size:0.88rem; color: var(--color-text-light);">
+        <i class="bi bi-info-circle me-1"></i>
+        Los tipos de habitación son referenciales. Consulta disponibilidad real al momento de reservar.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICIOS
+       ============================================================ -->
+  <section id="servicios" class="section-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-subtitle fade-in-up">Lo que ofrecemos</p>
+        <h2 class="section-title fade-in-up delay-1" style="margin: 0 auto;">Nuestros Servicios</h2>
+        <div style="width:60px;height:3px;background:var(--color-accent);margin:0.75rem auto 0;"></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3 fade-in-up">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-cup-hot-fill"></i></div>
+            <h5>Desayuno</h5>
+            <p>Comienza el día con un desayuno completo incluido en tu estadía.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 fade-in-up delay-1">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-wifi"></i></div>
+            <h5>WiFi Gratis</h5>
+            <p>Conexión a internet de alta velocidad en todas las áreas del hotel.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 fade-in-up delay-2">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-car-front-fill"></i></div>
+            <h5>Estacionamiento</h5>
+            <p>Estacionamiento privado y seguro disponible para nuestros huéspedes.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 fade-in-up delay-3">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-person-badge-fill"></i></div>
+            <h5>Recepción 24h</h5>
+            <p>Personal atento disponible las 24 horas para asistirte en lo que necesites.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 fade-in-up">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-snow2"></i></div>
+            <h5>Climatización</h5>
+            <p>Aire acondicionado y calefacción para disfrutar de cualquier temporada.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 fade-in-up delay-1">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-tv-fill"></i></div>
+            <h5>TV por Cable</h5>
+            <p>Canales nacionales e internacionales en todas las habitaciones.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 fade-in-up delay-2">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-droplet-half"></i></div>
+            <h5>Baño Privado</h5>
+            <p>Cada habitación cuenta con baño privado y amenities de higiene.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 fade-in-up delay-3">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-tree-fill"></i></div>
+            <h5>Entorno Natural</h5>
+            <p>Ubicados en Salamanca, rodeados de paisajes naturales únicos del Norte Chico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALERÍA
+       ============================================================ -->
+  <section id="galeria" class="section-dark">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 col-md-8">
+          <p class="section-subtitle fade-in-up" style="color: var(--color-accent);">Imágenes</p>
+          <h2 class="section-title fade-in-up delay-1" style="color: var(--color-white);">Galería del Hotel</h2>
+          <div style="width:60px;height:3px;background:var(--color-accent);margin-top:0.75rem;"></div>
+          <p class="section-desc fade-in-up delay-2" style="color: rgba(255,255,255,0.65); margin-top:1rem;">
+            Haz clic en cualquier imagen para verla en detalle.
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-grid fade-in-up">
+        <div class="gallery-item">
+          <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-001.JPG"
+               alt="Hotel Entre Rios" loading="lazy">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-038.JPG"
+               alt="Hotel Entre Rios" loading="lazy">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-019.JPG"
+               alt="Hotel Entre Rios" loading="lazy">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-028.JPG"
+               alt="Hotel Entre Rios" loading="lazy">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-033.JPG"
+               alt="Hotel Entre Rios" loading="lazy">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-036.JPG"
+               alt="Hotel Entre Rios" loading="lazy">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-022.JPG"
+               alt="Hotel Entre Rios" loading="lazy">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-040.JPG"
+               alt="Hotel Entre Rios" loading="lazy">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-041.JPG"
+               alt="Hotel Entre Rios" loading="lazy">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 fade-in-up">
+        <small style="color: rgba(255,255,255,0.45); font-size:0.82rem;">
+          Mostrando 9 de 28 fotos disponibles
+        </small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+       ============================================================ -->
+  <section id="contacto">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 col-md-8">
+          <p class="section-subtitle fade-in-up">Contáctanos</p>
+          <h2 class="section-title fade-in-up delay-1">Reservas y Consultas</h2>
+          <p class="section-desc fade-in-up delay-2">
+            Escríbenos o llámanos, estaremos felices de atenderte
+            y ayudarte a planificar tu estadía.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-5">
+
+        <!-- Info de contacto -->
+        <div class="col-lg-5 fade-in-up">
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <h6>Dirección</h6>
+              <p>Calle Julio Echeverría #701<br>Salamanca, Región de Coquimbo, Chile</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <h6>Teléfono / WhatsApp</h6>
+              <a href="tel:+56991287644">+56 9 9128 7644</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <h6>Correo electrónico</h6>
+              <a href="mailto:reservas@hotelentrerios.cl">reservas@hotelentrerios.cl</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+            <div>
+              <h6>Horario de Atención</h6>
+              <p>Recepción 24 horas, todos los días</p>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="map-wrap mt-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.5!2d-70.9615!3d-31.7798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDQ2JzQ3LjIiUyA3MMKwNTcnNDEuNCJX!5e0!3m2!1ses!2scl!4v1000000000000"
+              allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación Hotel Entre Rios en Salamanca">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="col-lg-7 fade-in-up delay-2">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre"
+                       placeholder="Tu nombre" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email"
+                       placeholder="tu@email.com" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono"
+                       placeholder="+56 9 XXXX XXXX">
+              </div>
+              <div class="col-sm-6">
+                <label for="tipoHab">Tipo de habitación</label>
+                <select class="form-select" id="tipoHab">
+                  <option value="" disabled selected>Seleccionar...</option>
+                  <option value="simple">Simple</option>
+                  <option value="doble">Doble</option>
+                  <option value="familiar">Familiar</option>
+                  <option value="consulta">Solo consulta</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label for="checkin">Fecha de llegada</label>
+                <input type="date" class="form-control" id="checkin">
+              </div>
+              <div class="col-sm-6">
+                <label for="checkout">Fecha de salida</label>
+                <input type="date" class="form-control" id="checkout">
+              </div>
+              <div class="col-12">
+                <label for="mensaje">Mensaje / Consulta</label>
+                <textarea class="form-control" id="mensaje" rows="4"
+                          placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-accent w-100 justify-content-center" style="font-size:1rem; padding:1rem;">
+                  <i class="bi bi-send-fill"></i>
+                  Enviar mensaje
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <img src="https://www.hotelentrerios.cl/assets/imgs/logohotel.png"
+                 alt="Logo Hotel Entre Rios"
+                 onerror="this.style.display='none'">
+            <p>Un lugar de descanso único en Salamanca, rodeado de naturaleza
+               y con la hospitalidad que nos caracteriza desde hace más de una década.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-2 offset-lg-1">
+          <h6 class="footer-title">Navegación</h6>
+          <ul class="footer-links">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#habitaciones">Habitaciones</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="footer-title">Servicios</h6>
+          <ul class="footer-links">
+            <li><a href="#">Desayuno incluido</a></li>
+            <li><a href="#">WiFi Gratis</a></li>
+            <li><a href="#">Estacionamiento</a></li>
+            <li><a href="#">Recepción 24h</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="footer-title">Contacto Rápido</h6>
+          <p style="font-size:0.88rem; margin-bottom:0.5rem;">
+            <i class="bi bi-geo-alt me-2" style="color:var(--color-accent);"></i>
+            Julio Echeverría #701, Salamanca
+          </p>
+          <p style="font-size:0.88rem; margin-bottom:0.5rem;">
+            <i class="bi bi-telephone me-2" style="color:var(--color-accent);"></i>
+            <a href="tel:+56991287644" style="color:rgba(255,255,255,0.7);">+56 9 9128 7644</a>
+          </p>
+          <p style="font-size:0.88rem; margin-bottom:1.25rem;">
+            <i class="bi bi-envelope me-2" style="color:var(--color-accent);"></i>
+            <a href="mailto:reservas@hotelentrerios.cl" style="color:rgba(255,255,255,0.7);">reservas@hotelentrerios.cl</a>
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/56991287644" class="social-link" aria-label="WhatsApp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="currentYear"></span> Hotel Entre Rios · Salamanca, Chile. Todos los derechos reservados.</span>
+        <span>Diseño web renovado <span style="color:var(--color-accent);">2025</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       LIGHTBOX (modal)
+       ============================================================ -->
+  <div class="lightbox-backdrop" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
+    <button class="lightbox-close" id="lbClose" aria-label="Cerrar">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <button class="lightbox-prev" id="lbPrev" aria-label="Imagen anterior">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <div class="lightbox-content">
+      <img src="" id="lbImg" alt="Vista ampliada">
+    </div>
+    <button class="lightbox-next" id="lbNext" aria-label="Imagen siguiente">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+    <div class="lightbox-counter" id="lbCounter"></div>
+  </div>
+
+  <!-- ============================================================
+       BACK TO TOP
+       ============================================================ -->
+  <button id="backToTop" aria-label="Volver al inicio">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
