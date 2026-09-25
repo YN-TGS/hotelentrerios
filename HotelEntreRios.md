@@ -144,7 +144,7 @@ hotelentrerios\
 - Check-in 12:30 / Check-out 11:30 (confirmado por el hotel; antes 14:00 / 11:00 sin confirmar). Aparece solo en la franja bajo el hero.
 - En celular, check-in y check-out van en líneas separadas (antes el "|" quedaba colgando).
 
-### Versión 1.7 — Trato de usted + título PC (2026-09-25)
+### Versión 1.7 — Trato de usted + título PC (2026-09-25, `a300ba0`)
 - Todo el contenido pasado a **usted**, igual que el hero: "Le damos la bienvenida… el confort que usted merece", "su visita / su vehículo / su descanso / su estadía", "Consulte", "Comience", "asistirle en lo que necesite", "Haga clic", "Llámenos… Será un gusto recibirle en Salamanca" y `og:description` "Descanse…".
 - Encabezado de contacto: "Contáctanos" → "Contacto" (coherente con los botones).
 - Título del hero en PC más pequeño a pedido del cliente: máx. 67→54px (`clamp(2.4rem, 4.5vw, 3.4rem)`). En celular sigue igual (30px).
