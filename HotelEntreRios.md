@@ -4,13 +4,13 @@
 **Repositorio:** https://github.com/YN-TGS/hotelentrerios  
 **Dominio final:** hotelentrerios.cl (hoy sigue mostrando el sitio VIEJO)  
 **Directorio local:** `D:\DEV\Web\ClaudeCode\GitHub\hotelentrerios\`  
-**Última actualización:** 2026-09-25 — versión 1.7, publicada
+**Última actualización:** 2026-09-25 — versión 1.8, publicada
 
 ---
 
 ## ▶ Punto de retomada (leer primero)
 
-**Estado:** el sitio está **completo en contenido** y publicado en la URL de revisión. Todo el feedback del cliente hasta el 25-sep-2026 está aplicado (ver v1.5 a v1.7). No hay trabajo a medio hacer ni cambios sin commit.
+**Estado:** el sitio está **completo en contenido** y publicado en la URL de revisión. Todo el feedback del cliente hasta el 25-sep-2026 está aplicado (ver v1.5 a v1.8). No hay trabajo a medio hacer ni cambios sin commit.
 
 **Quién es quién:**
 - Es el hotel del **abuelo de Gonzalo** (dueño). El **papá de Gonzalo** es quien habla con él y transmite el feedback; Gonzalo y Claude hacen el trabajo.
@@ -148,6 +148,9 @@ hotelentrerios\
 - Todo el contenido pasado a **usted**, igual que el hero: "Le damos la bienvenida… el confort que usted merece", "su visita / su vehículo / su descanso / su estadía", "Consulte", "Comience", "asistirle en lo que necesite", "Haga clic", "Llámenos… Será un gusto recibirle en Salamanca" y `og:description` "Descanse…".
 - Encabezado de contacto: "Contáctanos" → "Contacto" (coherente con los botones).
 - Título del hero en PC más pequeño a pedido del cliente: máx. 67→54px (`clamp(2.4rem, 4.5vw, 3.4rem)`). En celular sigue igual (30px).
+
+### Versión 1.8 — Texto de contacto (2026-09-25)
+- Texto indicado por el cliente: "Llámenos para reservas y consultas. Será un gusto recibirle en Salamanca." → "**Contáctenos para consultas y reservas. Será un gusto atenderle.**"
 
 ---
 
