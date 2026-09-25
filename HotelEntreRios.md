@@ -172,7 +172,7 @@ Seguir **`D:\DEV\Web\ClaudeCode\PROTOCOLO-MIGRACION-GHPAGES.md`** (fases 0 a 5, 
 Datos del hotel para la ficha (fase 0), comprobados el 25-sep-2026:
 - DNS: **Bluehost** (`ns1/ns2.bluehost.com`), **sin DNSSEC**. Sitio viejo en 162.241.216.59, **el mismo servidor que usaba Licahue** (probablemente la misma cuenta de hosting).
 - Correo: **Google Workspace** (MX `aspmx.l.google.com`), así que sobrevive a la migración si se copian MX, SPF y DKIM. Hay un TXT `google-site-verification` que también hay que copiar.
-- ⚠ **SPF mal:** `v=spf1 a mx include:websitewelcome.com ~all` no incluye a Google → los correos del hotel pueden caer en spam. Corregir a `v=spf1 include:_spf.google.com ~all` (en la fase 5, o antes si se quiere).
+- ⚠ **Correo saliente mal autenticado HOY** (revisado el 25-sep-2026): SPF `v=spf1 a mx include:websitewelcome.com ~all` no incluye a Google, y **no hay DKIM**. Los correos del hotel probablemente caen en spam. Arreglo: SPF → `v=spf1 include:_spf.google.com ~all` (Claude, con la zona en Cloudflare) + **DKIM generado en la consola de Google Workspace del hotel** (Apps → Google Workspace → Gmail → Autenticar correo electrónico), que quien la administre debe pasar para publicarlo.
 - `og:image` apunta a `https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-001.JPG`, una ruta que existe en el sitio nuevo, así que funciona igual después de migrar.
 
 ---
