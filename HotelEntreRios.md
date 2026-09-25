@@ -32,6 +32,8 @@ Los demás servicios (desayuno incluido, WiFi, estacionamiento, calefacción, TV
 2. La galería tiene una foto de una **habitación con tina** (HOTEL-017). ¿Mencionarla en habitaciones o servicios?
 
 **Próximo paso grande:** con el visto bueno final → migrar a lvilchesa y conectar el dominio (ver "Migración a producción" más abajo).
+**En espera (25-sep-2026):** Gonzalo prefiere no mover nada, ni siquiera el DNS, hasta que el cliente valide que la página nueva está aceptada.
+Plan acordado para entonces: Gonzalo agrega la zona en Cloudflare y **genera el DKIM en la consola de Google Workspace** (la administra el papá; Gonzalo tiene acceso a su PC por AnyDesk; prefijo `google`, 2048 bits, **sin** presionar "Iniciar autenticación" hasta que el registro esté publicado). Claude arma el molde agregando el DKIM y el SPF con `include:_spf.google.com`.
 
 ---
 
