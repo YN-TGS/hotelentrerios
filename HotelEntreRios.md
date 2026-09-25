@@ -165,16 +165,12 @@ hotelentrerios\
 
 ## Migración a producción (cuando haya visto bueno)
 
-1. En github.com con la cuenta **lvilchesa**: *Import repository* desde `https://github.com/YN-TGS/hotelentrerios` (copia todo el historial y queda independiente).
-2. En el repo nuevo: Settings → Pages → rama `main`, raíz `/`. Luego Custom domain = `hotelentrerios.cl` (crea el archivo `CNAME`) y activar *Enforce HTTPS* cuando esté disponible.
-3. DNS del dominio: registros A del apex a GitHub Pages (185.199.108.153, .109.153, .110.153, .111.153) y **`www` como CNAME a `lvilchesa.github.io`**. Esto fue lo que destrabó el HTTPS en Licahue (24-sep-2026). **Hoy el DNS lo maneja Bluehost** (`ns1/ns2.bluehost.com`, comprobado el 25-sep-2026), no Cloudflare. Pasos previos:
-   - Gonzalo agrega `hotelentrerios.cl` en su cuenta de Cloudflare desde el panel. El token de Claude no tiene permiso para crear zonas, a propósito.
-   - Revisar que Cloudflare haya importado **todos** los registros, sobre todo **MX/SPF/DKIM** (el correo `reservas@` vive en Bluehost). Claude puede hacerlo con el token.
-   - El titular del dominio cambia los **servidores DNS en NIC Chile** a los que indique Cloudflare (probablemente con la cuenta del abuelo).
-   - Recién entonces se crean los registros de GitHub Pages en Cloudflare.
-4. Clonar el repo nuevo en local (o cambiar el `origin` de esta carpeta) y usar el correo de **lvilchesa** en ese repo.
-5. Verificar que `og:image` (`https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-001.JPG`) responde desde el sitio nuevo. La ruta se eligió igual a la del sitio viejo para que no haya que tocarlo.
-6. Antes de cambiar el DNS, conviene respaldar el sitio viejo (ya hay copia del HTML y de la lista de fotos en `Old/`; las fotos ya están en `assets/imgs/`).
+Seguir **`D:\DEV\Web\ClaudeCode\PROTOCOLO-MIGRACION-GHPAGES.md`** (fases 0 a 5, con la herramienta `MigracionDNS/dnsmig.py`).
+Datos del hotel para la ficha (fase 0), comprobados el 25-sep-2026:
+- DNS: **Bluehost** (`ns1/ns2.bluehost.com`), **sin DNSSEC**. Sitio viejo en 162.241.216.59, **el mismo servidor que usaba Licahue** (probablemente la misma cuenta de hosting).
+- Correo: **Google Workspace** (MX `aspmx.l.google.com`), así que sobrevive a la migración si se copian MX, SPF y DKIM. Hay un TXT `google-site-verification` que también hay que copiar.
+- ⚠ **SPF mal:** `v=spf1 a mx include:websitewelcome.com ~all` no incluye a Google → los correos del hotel pueden caer en spam. Corregir a `v=spf1 include:_spf.google.com ~all` (en la fase 5, o antes si se quiere).
+- `og:image` apunta a `https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-001.JPG`, una ruta que existe en el sitio nuevo, así que funciona igual después de migrar.
 
 ---
 
