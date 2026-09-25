@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const expanded = galleryGrid.classList.toggle('show-all');
     galleryToggle.setAttribute('aria-expanded', expanded);
     galleryToggle.querySelector('span').textContent =
-      expanded ? 'Ver menos' : `Ver las ${galleryImages.length} fotos`;
+      expanded ? 'Ver menos' : 'Ver toda la galería';
     if (!expanded) galleryGrid.scrollIntoView({ behavior: 'smooth' });
   });
 

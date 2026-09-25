@@ -149,8 +149,9 @@ hotelentrerios\
 - Encabezado de contacto: "Contáctanos" → "Contacto" (coherente con los botones).
 - Título del hero en PC más pequeño a pedido del cliente: máx. 67→54px (`clamp(2.4rem, 4.5vw, 3.4rem)`). En celular sigue igual (30px).
 
-### Versión 1.8 — Texto de contacto (2026-09-25, `00a7390`)
+### Versión 1.8 — Textos de contacto y galería (2026-09-25, `00a7390`)
 - Texto indicado por el cliente: "Llámenos para reservas y consultas. Será un gusto recibirle en Salamanca." → "**Contáctenos para consultas y reservas. Será un gusto atenderle.**"
+- Botón de la galería: "Ver las 29 fotos" → "**Ver toda la galería**" (HTML y `main.js`, que lo restaura al cerrar).
 
 ---
 
