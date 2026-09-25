@@ -96,13 +96,16 @@ hotelentrerios\
 - Sección contacto: teléfono destacado, dirección con enlace "Cómo llegar" (Google Maps con ruta), horario y botón "Llamar ahora"; mapa a la derecha (abajo en celular).
 - Mapa: embed real de Google Maps con la ficha "Hotel Entre Rios - Salamanca" (vista satélite).
 
+### Versión 1.4 — Detalles (2026-09-25)
+- Hero: "Reservar ahora" → "Contáctenos" (completa el cambio 6 de la v1.1).
+- Footer: íconos de Facebook e Instagram desactivados (comentados en el HTML) hasta tener las URLs reales. WhatsApp se mantiene.
+
 ---
 
 ## Pendiente / Próximos pasos
 
-- [ ] **Hero**: el botón aún dice "Reservar ahora" (el cliente pidió "Contáctenos")
-- [ ] **Redes**: Facebook e Instagram del footer apuntan a `#`
-- [ ] **Confirmar con el cliente**: horarios check-in/out, recepción y seguridad 24h, WhatsApp. Las fotos muestran **piscina** y **tina**, que la página no menciona
+- [ ] **Redes**: cuando existan las URLs, descomentar Facebook/Instagram en el footer y poner los enlaces
+- [ ] **Confirmar con el cliente** (lo consulta el papá de Gonzalo, que habla directo con el dueño): horarios check-in/out, recepción y seguridad 24h, WhatsApp. Las fotos muestran **piscina** y **tina**, que la página no menciona
 - [ ] **Dominio**: hotelentrerios.cl sigue mostrando el sitio viejo; falta apuntarlo a GitHub Pages
 
 ---
