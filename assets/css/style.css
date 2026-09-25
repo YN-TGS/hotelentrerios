@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5 {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
   font-weight: 700;
   color: var(--color-white);
   line-height: 1.05;
@@ -858,9 +858,26 @@ section {
   color: var(--color-primary) !important;
 }
 
-.contact-call {
-  display: flex;
-  width: 100%;
+.contact-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.contact-actions .btn-accent {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  border-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+  background: #1EBE5A;
+  border-color: #1EBE5A;
+  box-shadow: 0 8px 20px rgba(37,211,102,0.35);
 }
 
 /* Mapa embed */
@@ -1061,7 +1078,7 @@ section {
   }
 
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 1.9rem;
   }
 
   .gallery-grid {

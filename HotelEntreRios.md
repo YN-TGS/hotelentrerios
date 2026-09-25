@@ -100,12 +100,20 @@ hotelentrerios\
 - Hero: "Reservar ahora" → "Contáctenos" (completa el cambio 6 de la v1.1).
 - Footer: íconos de Facebook e Instagram desactivados (comentados en el HTML) hasta tener las URLs reales. WhatsApp se mantiene.
 
+### Versión 1.5 — Feedback del cliente (2026-09-25)
+- "Contáctenos" → "Contacto" (navbar, hero y tarjetas de habitaciones).
+- Hero: "Un refugio" → "Su refugio"; título más pequeño (celular 38→30px, PC máx. 88→67px).
+- Cliente confirmó **piscina**: reemplaza a "Seguridad 24/7" en Nosotros y a "Entorno Natural" en Servicios; agregada al footer.
+- "Seguridad 24/7" eliminado a pedido del cliente. Recepción 24/7 confirmada.
+- WhatsApp confirmado: botones "Llamar" + "WhatsApp" (wa.me) en contacto.
+- Enlaces de servicios del footer ahora van a `#servicios` (antes `#`).
+
 ---
 
 ## Pendiente / Próximos pasos
 
 - [ ] **Redes**: cuando existan las URLs, descomentar Facebook/Instagram en el footer y poner los enlaces
-- [ ] **Confirmar con el cliente** (lo consulta el papá de Gonzalo, que habla directo con el dueño): horarios check-in/out, recepción y seguridad 24h, WhatsApp. Las fotos muestran **piscina** y **tina**, que la página no menciona
+- [ ] **Horarios check-in/out**: el cliente los va a confirmar (hoy dice 14:00 / 11:00, sin confirmar)
 - [ ] **Dominio**: hotelentrerios.cl sigue mostrando el sitio viejo; falta apuntarlo a GitHub Pages
 
 ---
