@@ -14,7 +14,7 @@
 - Google Fonts: Playfair Display (display) + Lato (body/slogan)
 - CSS personalizado: `assets/css/style.css`
 - JS vanilla: `assets/js/main.js`
-- Formulario: FormSubmit.co → `reservas@hotelentrerios.cl`
+- Sin formulario (decisión del cliente, 25-sep-2026): solo teléfono, dirección y mapa
 - Hosting: GitHub Pages (rama `main`, raíz `/`)
 
 ---
@@ -91,13 +91,15 @@ hotelentrerios\
 - Logo a color (antes se forzaba a silueta blanca con `filter` y quedaba una mancha). Navbar 56px, footer 90px.
 - Corregido el alt de la foto de "Nosotros" (decía "Exterior" y es una habitación).
 
+### Versión 1.3 — Contacto sin formulario + mapa real (2026-09-25)
+- **Formulario eliminado** por decisión del cliente (el hotel no revisa correo). Se quitaron el HTML, la simulación en `main.js` y el CSS `.contact-form`.
+- Sección contacto: teléfono destacado, dirección con enlace "Cómo llegar" (Google Maps con ruta), horario y botón "Llamar ahora"; mapa a la derecha (abajo en celular).
+- Mapa: embed real de Google Maps con la ficha "Hotel Entre Rios - Salamanca" (vista satélite).
+
 ---
 
 ## Pendiente / Próximos pasos
 
-- [ ] **Confirmar FormSubmit**: primer envío del formulario activa el email de verificación en `reservas@hotelentrerios.cl` — el cliente debe confirmar ese correo para activar el servicio
-- [ ] **Mapa Google Maps**: la URL embed actual es placeholder. Reemplazar con embed real de la ubicación exacta del hotel en Salamanca
-- [ ] **Formulario NO envía**: `main.js` hace `e.preventDefault()` y simula el envío (resto del prototipo). Hay que quitar la simulación. Pendiente de los datos del cliente
 - [ ] **Hero**: el botón aún dice "Reservar ahora" (el cliente pidió "Contáctenos")
 - [ ] **Redes**: Facebook e Instagram del footer apuntan a `#`
 - [ ] **Confirmar con el cliente**: horarios check-in/out, recepción y seguridad 24h, WhatsApp. Las fotos muestran **piscina** y **tina**, que la página no menciona
@@ -106,12 +108,6 @@ hotelentrerios\
 ---
 
 ## Notas técnicas
-
-### FormSubmit
-- No requiere registro previo
-- **Primera vez**: al enviar el formulario, FormSubmit envía un email de activación a `reservas@hotelentrerios.cl`. El cliente debe hacer clic en el enlace de ese correo
-- Después de activar, todos los envíos llegan directo al correo
-- `_next`: redirige al usuario de vuelta a `#contacto` tras enviar
 
 ### Deploy a GitHub Pages
 ```bash

@@ -1,6 +1,6 @@
 /**
  * Hotel Entre Rios - main.js
- * Comportamiento UI: navbar, scroll, galería lightbox, formulario, animaciones
+ * Comportamiento UI: navbar, scroll, galería lightbox, animaciones
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -169,33 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
       else          prevImage();
     }
   }, { passive: true });
-
-  // ============================================================
-  // FORMULARIO DE CONTACTO (simulado)
-  // ============================================================
-  const contactForm = document.getElementById('contactForm');
-
-  contactForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const btn       = contactForm.querySelector('[type="submit"]');
-    const original  = btn.innerHTML;
-
-    btn.disabled  = true;
-    btn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Enviando...';
-
-    setTimeout(() => {
-      btn.innerHTML = '<i class="bi bi-check-lg me-2"></i>¡Mensaje enviado!';
-      btn.style.background = 'var(--color-secondary)';
-
-      setTimeout(() => {
-        btn.disabled  = false;
-        btn.innerHTML = original;
-        btn.style.background = '';
-        contactForm.reset();
-      }, 3000);
-    }, 1800);
-  });
 
   // ============================================================
   // HERO: cambio dinámico de fondo

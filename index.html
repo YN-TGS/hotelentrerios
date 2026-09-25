@@ -531,7 +531,7 @@
   </section>
 
   <!-- ============================================================
-       CONTACTO - SIN EMAILS VISIBLES, SOLO FORMULARIO
+       CONTACTO - solo datos + mapa (sin formulario)
        ============================================================ -->
   <section id="contacto">
     <div class="container">
@@ -539,28 +539,32 @@
         <div class="col-12">
           <p class="section-subtitle fade-in-up">Contáctanos</p>
           <p class="section-desc fade-in-up delay-1">
-            Llámanos o completa el formulario para reservas y consultas.
+            Llámanos para reservas y consultas. Te esperamos en Salamanca.
           </p>
         </div>
       </div>
 
-      <div class="row g-5">
+      <div class="row g-5 align-items-stretch">
 
-        <!-- Info de contacto (SIN EMAIL) -->
+        <!-- Info de contacto -->
         <div class="col-lg-5 fade-in-up">
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <h6>Teléfono / WhatsApp</h6>
+              <a href="tel:+56991287644" class="contact-phone">+56 9 9128 7644</a>
+            </div>
+          </div>
+
           <div class="contact-info-item">
             <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
             <div>
               <h6>Dirección</h6>
               <p>Calle Julio Echeverría #701<br>Salamanca, Región de Coquimbo, Chile</p>
-            </div>
-          </div>
-
-          <div class="contact-info-item">
-            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
-            <div>
-              <h6>Teléfono / WhatsApp</h6>
-              <a href="tel:+56991287644">+56 9 9128 7644</a>
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Hotel+Entre+Rios+-+Salamanca"
+                 target="_blank" rel="noopener" class="contact-directions">
+                <i class="bi bi-sign-turn-right"></i> Cómo llegar
+              </a>
             </div>
           </div>
 
@@ -572,82 +576,22 @@
             </div>
           </div>
 
-          <!-- Mapa -->
-          <div class="map-wrap mt-4">
+          <a href="tel:+56991287644" class="btn-accent justify-content-center mt-2 contact-call">
+            <i class="bi bi-telephone-fill"></i>
+            Llamar ahora
+          </a>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-lg-7 fade-in-up delay-2">
+          <div class="map-wrap">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.5!2d-70.9615!3d-31.7798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDQ2JzQ3LjIiUyA3MMKwNTcnNDEuNCJX!5e0!3m2!1ses!2scl!4v1000000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.1043431443823!2d-70.96769242466586!3d-31.784919414163287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9688cf9ac18813df%3A0xe8432b7ea36d13e8!2sHotel%20Entre%20Rios%20-%20Salamanca!5e1!3m2!1ses!2scl!4v1790343712263!5m2!1ses!2scl"
               allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerpolicy="strict-origin-when-cross-origin"
               title="Ubicación Hotel Entre Rios en Salamanca">
             </iframe>
           </div>
-        </div>
-
-        <!-- Formulario -->
-        <div class="col-lg-7 fade-in-up delay-2">
-          <h4 class="mb-4" style="font-family: var(--font-display); color: var(--color-dark); font-size:1.4rem;">
-            <i class="bi bi-envelope me-2" style="color:var(--color-accent);"></i>
-            Contacto / Solicitud de reservas
-          </h4>
-
-          <form id="contactForm"
-                class="contact-form"
-                action="https://formsubmit.co/reservas@hotelentrerios.cl"
-                method="POST"
-                novalidate>
-
-            <!-- Configuración FormSubmit -->
-            <input type="hidden" name="_captcha"  value="false">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_subject"  value="Contacto / Solicitud de reserva - Hotel Entre Rios">
-            <input type="hidden" name="_next"     value="https://yn-tgs.github.io/hotelentrerios/#contacto">
-
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <label for="nombre">Nombre completo</label>
-                <input type="text" class="form-control" id="nombre"
-                       name="nombre" placeholder="Tu nombre" required>
-              </div>
-              <div class="col-sm-6">
-                <label for="email">Correo electrónico</label>
-                <input type="email" class="form-control" id="email"
-                       name="_replyto" placeholder="tu@email.com" required>
-              </div>
-              <div class="col-sm-6">
-                <label for="telefono">Teléfono</label>
-                <input type="tel" class="form-control" id="telefono"
-                       name="telefono" placeholder="+56 9 XXXX XXXX">
-              </div>
-              <div class="col-sm-6">
-                <label for="tipoHab">Tipo de habitación</label>
-                <select class="form-select" id="tipoHab" name="tipo_habitacion">
-                  <option value="" disabled selected>Seleccionar...</option>
-                  <option value="Simple">Simple</option>
-                  <option value="Doble">Doble</option>
-                  <option value="Solo consulta">Solo consulta</option>
-                </select>
-              </div>
-              <div class="col-sm-6">
-                <label for="checkin">Fecha de llegada</label>
-                <input type="date" class="form-control" id="checkin" name="fecha_llegada">
-              </div>
-              <div class="col-sm-6">
-                <label for="checkout">Fecha de salida</label>
-                <input type="date" class="form-control" id="checkout" name="fecha_salida">
-              </div>
-              <div class="col-12">
-                <label for="mensaje">Mensaje / Consulta</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
-                          placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn-accent w-100 justify-content-center" style="font-size:1rem; padding:1rem;">
-                  <i class="bi bi-send-fill"></i>
-                  Enviar mensaje
-                </button>
-              </div>
-            </div>
-          </form>
         </div>
 
       </div>
