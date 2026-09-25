@@ -108,12 +108,14 @@ hotelentrerios\
 - WhatsApp confirmado: botones "Llamar" + "WhatsApp" (wa.me) en contacto.
 - Enlaces de servicios del footer ahora van a `#servicios` (antes `#`).
 
+### Versión 1.6 — Horarios confirmados (2026-09-25)
+- Check-in 12:30 / Check-out 11:30 (confirmado por el hotel; antes 14:00 / 11:00 sin confirmar).
+
 ---
 
 ## Pendiente / Próximos pasos
 
 - [ ] **Redes**: cuando existan las URLs, descomentar Facebook/Instagram en el footer y poner los enlaces
-- [ ] **Horarios check-in/out**: el cliente los va a confirmar (hoy dice 14:00 / 11:00, sin confirmar)
 - [ ] **Dominio**: hotelentrerios.cl sigue mostrando el sitio viejo; falta apuntarlo a GitHub Pages
 
 ---
