@@ -123,6 +123,18 @@ document.addEventListener('DOMContentLoaded', () => {
     lbCounter.textContent = `${currentIndex + 1} / ${galleryImages.length}`;
   };
 
+  // Ver todas / ver menos
+  const galleryGrid   = document.getElementById('galleryGrid');
+  const galleryToggle = document.getElementById('galleryToggle');
+
+  galleryToggle?.addEventListener('click', () => {
+    const expanded = galleryGrid.classList.toggle('show-all');
+    galleryToggle.setAttribute('aria-expanded', expanded);
+    galleryToggle.querySelector('span').textContent =
+      expanded ? 'Ver menos' : `Ver las ${galleryImages.length} fotos`;
+    if (!expanded) galleryGrid.scrollIntoView({ behavior: 'smooth' });
+  });
+
   // Eventos de galería
   document.querySelectorAll('.gallery-item').forEach((item, index) => {
     item.addEventListener('click', () => openLightbox(index));
@@ -189,10 +201,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // HERO: cambio dinámico de fondo
   // ============================================================
   const heroImages = [
-    'https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-001.JPG',
-    'https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-038.JPG',
-    'https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-028.JPG',
-    'https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-019.JPG',
+    'assets/imgs/galeria/hotel/HOTEL-001.JPG',
+    'assets/imgs/galeria/hotel/HOTEL-038.JPG',
+    'assets/imgs/galeria/hotel/HOTEL-028.JPG',
+    'assets/imgs/galeria/hotel/HOTEL-019.JPG',
   ];
 
   const heroBg = document.querySelector('.hero-bg');

@@ -133,9 +133,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar-brand img {
-  height: 44px;
+  height: 56px;
   width: auto;
-  filter: brightness(0) invert(1);
 }
 
 .navbar-brand-text {
@@ -203,7 +202,7 @@ h1, h2, h3, h4, h5 {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://www.hotelentrerios.cl/assets/imgs/galeria/hotel/HOTEL-001.JPG');
+  background-image: url('../imgs/galeria/hotel/HOTEL-001.JPG');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -614,6 +613,28 @@ section {
   min-height: 480px;
 }
 
+.gallery-extra {
+  display: none;
+}
+
+.gallery-grid.show-all .gallery-extra {
+  display: block;
+}
+
+/* 29 fotos en 3 columnas (la primera ocupa 2x2) dejan un hueco al final */
+@media (min-width: 769px) {
+  .gallery-grid.show-all .gallery-item:last-child {
+    grid-column: span 2;
+  }
+
+  /* que tome el alto de la fila en vez de estirarla */
+  .gallery-grid.show-all .gallery-item:last-child img {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+  }
+}
+
 .gallery-item:hover img {
   transform: scale(1.06);
 }
@@ -870,8 +891,7 @@ section {
 }
 
 .footer-brand img {
-  height: 50px;
-  filter: brightness(0) invert(1);
+  height: 90px;
   margin-bottom: 1rem;
 }
 

@@ -3,7 +3,7 @@
 **URL producción:** https://yn-tgs.github.io/hotelentrerios/  
 **Repositorio:** https://github.com/YN-TGS/hotelentrerios  
 **Directorio local:** `D:\DEV\Web\ClaudeCode\GitHub\hotelentrerios\`  
-**Última actualización:** 2026-02-17
+**Última actualización:** 2026-09-25
 
 ---
 
@@ -30,7 +30,9 @@ hotelentrerios\
 ├── assets\
 │   ├── css\style.css
 │   ├── js\main.js
-│   └── imgs\               ← vacío (imágenes vienen del servidor original)
+│   └── imgs\
+│       ├── logohotel.png
+│       └── galeria\hotel\  ← 29 fotos HOTEL-0xx.JPG (misma ruta que el sitio viejo)
 └── Old\
     ├── contenido-extraido.md
     ├── index-original.html
@@ -81,15 +83,25 @@ hotelentrerios\
 | 10 | Footer: "rodeado de naturaleza" → "en la precordillera del Valle del Choapa" / "una década" → "más de dos décadas" | ✅ Hecho |
 | 11 | Footer: "Diseño VyASA — Hosting SomosWeb.cl" | ✅ Hecho |
 
+### Versión 1.2 — Galería y logo locales (2026-09-25)
+- Logo y las 29 fotos descargados a `assets/imgs/`. El sitio ya no depende del servidor viejo.
+  - Se respetó la ruta original `assets/imgs/galeria/hotel/`, así que el `og:image` (absoluto a hotelentrerios.cl) seguirá funcionando al migrar el dominio.
+- Galería: 9 fotos visibles + botón "Ver las 29 fotos" / "Ver menos"; el lightbox recorre las 29.
+- Cada foto tiene texto alternativo descriptivo (antes todas decían "Hotel Entre Rios").
+- Logo a color (antes se forzaba a silueta blanca con `filter` y quedaba una mancha). Navbar 56px, footer 90px.
+- Corregido el alt de la foto de "Nosotros" (decía "Exterior" y es una habitación).
+
 ---
 
 ## Pendiente / Próximos pasos
 
 - [ ] **Confirmar FormSubmit**: primer envío del formulario activa el email de verificación en `reservas@hotelentrerios.cl` — el cliente debe confirmar ese correo para activar el servicio
 - [ ] **Mapa Google Maps**: la URL embed actual es placeholder. Reemplazar con embed real de la ubicación exacta del hotel en Salamanca
-- [ ] **Logo**: actualmente se carga desde el servidor original (`hotelentrerios.cl`). Considerar alojar una copia local en `assets/imgs/`
-- [ ] **Imágenes propias**: todas las fotos se cargan desde el servidor original. Si el cliente quiere independencia total, descargar y alojar localmente
-- [ ] **Deploy de cambios v1.1**: subir a GitHub con git add/commit/push
+- [ ] **Formulario NO envía**: `main.js` hace `e.preventDefault()` y simula el envío (resto del prototipo). Hay que quitar la simulación. Pendiente de los datos del cliente
+- [ ] **Hero**: el botón aún dice "Reservar ahora" (el cliente pidió "Contáctenos")
+- [ ] **Redes**: Facebook e Instagram del footer apuntan a `#`
+- [ ] **Confirmar con el cliente**: horarios check-in/out, recepción y seguridad 24h, WhatsApp. Las fotos muestran **piscina** y **tina**, que la página no menciona
+- [ ] **Dominio**: hotelentrerios.cl sigue mostrando el sitio viejo; falta apuntarlo a GitHub Pages
 
 ---
 
