@@ -4,13 +4,13 @@
 **Repositorio:** https://github.com/YN-TGS/hotelentrerios  
 **Dominio final:** hotelentrerios.cl (hoy sigue mostrando el sitio VIEJO)  
 **Directorio local:** `D:\DEV\Web\ClaudeCode\GitHub\hotelentrerios\`  
-**Última actualización:** 2026-09-25 — versión 1.8, publicada
+**Última actualización:** 2026-09-25 — versión 1.9, publicada
 
 ---
 
 ## ▶ Punto de retomada (leer primero)
 
-**Estado:** el sitio está **completo en contenido** y publicado en la URL de revisión. Todo el feedback del cliente hasta el 25-sep-2026 está aplicado (ver v1.5 a v1.8). No hay trabajo a medio hacer ni cambios sin commit.
+**Estado:** el sitio está **completo en contenido** y publicado en la URL de revisión. Todo el feedback del cliente hasta el 25-sep-2026 está aplicado (ver v1.5 a v1.9). No hay trabajo a medio hacer ni cambios sin commit.
 
 **Quién es quién:**
 - Es el hotel del **abuelo de Gonzalo** (dueño). El **papá de Gonzalo** es quien habla con él y transmite el feedback; Gonzalo y Claude hacen el trabajo.
@@ -152,6 +152,9 @@ hotelentrerios\
 ### Versión 1.8 — Textos de contacto y galería (2026-09-25, `00a7390`)
 - Texto indicado por el cliente: "Llámenos para reservas y consultas. Será un gusto recibirle en Salamanca." → "**Contáctenos para consultas y reservas. Será un gusto atenderle.**"
 - Botón de la galería: "Ver las 29 fotos" → "**Ver toda la galería**" (HTML y `main.js`, que lo restaura al cerrar).
+
+### Versión 1.9 — Horarios en Contacto (2026-09-25)
+- Check-in 12:30 / Check-out 11:30 agregados también en la sección Contacto, como un dato más bajo "Horario de Atención" (siguen también en la franja bajo el hero). Pedido del cliente.
 
 ---
 
