@@ -4,13 +4,13 @@
 **Repositorio:** https://github.com/YN-TGS/hotelentrerios  
 **Dominio final:** hotelentrerios.cl (hoy sigue mostrando el sitio VIEJO)  
 **Directorio local:** `D:\DEV\Web\ClaudeCode\GitHub\hotelentrerios\`  
-**Última actualización:** 2026-09-25 — versión 1.6 (commit `2c89503`), publicada
+**Última actualización:** 2026-09-25 — versión 1.7, publicada
 
 ---
 
 ## ▶ Punto de retomada (leer primero)
 
-**Estado:** el sitio está **completo en contenido** y publicado en la URL de revisión. Todo el feedback del cliente hasta el 25-sep-2026 está aplicado (ver v1.5 y v1.6). No hay trabajo a medio hacer ni cambios sin commit.
+**Estado:** el sitio está **completo en contenido** y publicado en la URL de revisión. Todo el feedback del cliente hasta el 25-sep-2026 está aplicado (ver v1.5 a v1.7). No hay trabajo a medio hacer ni cambios sin commit.
 
 **Quién es quién:**
 - Es el hotel del **abuelo de Gonzalo** (dueño). El **papá de Gonzalo** es quien habla con él y transmite el feedback; Gonzalo y Claude hacen el trabajo.
@@ -22,14 +22,14 @@
 - Slogan: **"Su refugio en el Valle del Choapa"**, en tipografía palo seco (Lato).
 - Solo habitaciones **Simple y Doble**.
 - **Sin "Seguridad 24/7"** (el cliente pidió quitarlo).
+- **Trato de usted** en todo el sitio (v1.7). Textos nuevos: siempre en usted.
 
 **Datos confirmados por el hotel:** teléfono +56 9 9128 7644 **con WhatsApp** · recepción 24/7 · **piscina** · check-in **12:30** / check-out **11:30** · dirección Calle Julio Echeverría #701, Salamanca.  
 Los demás servicios (desayuno incluido, WiFi, estacionamiento, calefacción, TV cable, baño privado) vienen de la v1.0; el cliente revisó la página en la v1.1 y no los objetó, pero no se confirmaron uno por uno.
 
 **Preguntas abiertas para el cliente:**
 1. ¿Tienen **Facebook / Instagram**? Si no, se pueden dejar desactivados para siempre (no se ven).
-2. **Trato usted/tú:** el slogan dice "Su refugio" (usted), pero el resto tutea ("el confort que mereces", "tu estadía", "Contáctanos"). ¿Unificar a usted?
-3. La galería tiene una foto de una **habitación con tina** (HOTEL-017). ¿Mencionarla en habitaciones o servicios?
+2. La galería tiene una foto de una **habitación con tina** (HOTEL-017). ¿Mencionarla en habitaciones o servicios?
 
 **Próximo paso grande:** con el visto bueno final → migrar a lvilchesa y conectar el dominio (ver "Migración a producción" más abajo).
 
@@ -144,11 +144,16 @@ hotelentrerios\
 - Check-in 12:30 / Check-out 11:30 (confirmado por el hotel; antes 14:00 / 11:00 sin confirmar). Aparece solo en la franja bajo el hero.
 - En celular, check-in y check-out van en líneas separadas (antes el "|" quedaba colgando).
 
+### Versión 1.7 — Trato de usted + título PC (2026-09-25)
+- Todo el contenido pasado a **usted**, igual que el hero: "Le damos la bienvenida… el confort que usted merece", "su visita / su vehículo / su descanso / su estadía", "Consulte", "Comience", "asistirle en lo que necesite", "Haga clic", "Llámenos… Será un gusto recibirle en Salamanca" y `og:description` "Descanse…".
+- Encabezado de contacto: "Contáctanos" → "Contacto" (coherente con los botones).
+- Título del hero en PC más pequeño a pedido del cliente: máx. 67→54px (`clamp(2.4rem, 4.5vw, 3.4rem)`). En celular sigue igual (30px).
+
 ---
 
 ## Pendiente / Próximos pasos
 
-- [ ] **Respuestas del cliente** a las 3 preguntas abiertas del punto de retomada (redes, usted/tú, tina)
+- [ ] **Respuestas del cliente** a las 3 preguntas abiertas del punto de retomada (redes, tina)
 - [ ] **Visto bueno final** del cliente sobre la URL de revisión
 - [ ] **Migración a producción** (cuenta lvilchesa + dominio): ver sección siguiente
 
